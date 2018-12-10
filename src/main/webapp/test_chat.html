@@ -8,9 +8,11 @@
 
 
 <center>
-    Welcome<br/><input id="text" type="text"/>
-    <button onclick="send()">发送消息</button>
+    Welcome<br/>
+    <img src="111.jpg"/>
     <hr/>
+    <input id="text" type="text"/>
+    <button onclick="send()">发送消息</button>
     <button onclick="closeWebSocket()">关闭WebSocket连接</button>
     <hr/>
     <div id="message"></div>
@@ -20,7 +22,7 @@
     //判断当前浏览器是否支持WebSocket
     if ('WebSocket' in window) {
         alert('当前浏览器支持 websocket');
-        websocket = new WebSocket("ws://localhost:8080/chat");
+        websocket = new WebSocket("ws://47.101.32.189:8080/chat");
     }
     else {
         alert('当前浏览器 Not support websocket')
